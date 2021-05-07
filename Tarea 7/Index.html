@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bancamia</title>
+    <link href="Styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>BANCATUYA</h1>
+
+    <form action="#" autocomplete="off" id="Crear">
+
+        <fieldset>
+           <legend><h2>Crear una cuenta</h2></legend>
+
+           <div>
+               <label for="Nombre">Nombre
+                   <input type= "text" name="Nombre" id="Nombre" size="17" required>
+               </label>
+               <br>
+               <br>
+               <label for="Sexo">Genero</label>
+                   <br>
+                   <input type="radio" name="Sexo" id="Sexo">Masculino
+                   <br>
+                   <input type="radio" name="Sexo" id="Sexo">Femenino
+                   <br>
+                   <input type="radio" name="Sexo" id="Sexo">otro
+
+           </div>
+
+           <br>
+
+           <div>
+               Tipo de documento
+                 <select>
+                    <option value="ElijaUnaOpcion">Elija una opcion</option>
+                    <option value="CedulaExtranera">Cedula Extranera</option>
+                    <option value="CedulaDeCiudadania">Cedula de ciudadania</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                 </select>
+
+               <label for="N°"> Numero
+                   <input type="text" name="N°" id="N°" required>
+               </label>
+            </div>
+
+            <br>
+
+           <div>
+               <label for="Fecha">Fecha de nacimiento
+                   <input type="date" name="Fecha" id="Fecha">
+               </label>
+           </div>
+
+           <br>
+
+           <div>
+               <label for="Direccion">Direccion de residencia
+                   <input type="text" name="Direccion" id="Direccion">
+               </label>
+           </div>
+
+           <br>
+
+           <div>
+               <label for="N° telefonico">Digite su numero telefonico
+                   <input type="text" name="N° telefonico" id="N° telefonico" required>
+               </label>
+           </div>
+
+           <br>
+
+           <div>
+               <label for="E-mail">E-mail
+                   <input type="email" name="E-mail" id="E-mail">
+               </label>
+           </div>
+
+           <br>
+
+           <div>
+               <label for="Contraseña">Contraseña
+                   <input type="password" name="Contraseña" id="Contraseña" minlength="8" required>
+               </label>
+               
+               <label for="ConfirmeContraseña">Confirme Contraseña
+                   <input type="password" name="ConfirmeContraseña" id="ConfirmeContraseña" minlength="8" required>
+               </label>
+           </div>
+
+           <br>
+
+           <div>
+               <button type="submit" id=CrearCuenta>Crear Cuenta</button>
+           </div>
+
+        </fieldset>
+
+    </form>
+
+    <form action="#" autocomplete="off" id="Desactivar">
+        <fieldset>
+
+            <legend><h2>Desactivar una cuenta</h2></legend>
+
+            <div>
+                <label for="NombreN"> Nombre del titular de la cuenta a cancelar
+                    <input type= "text" name="NombreN" id="NombreN" size="17" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Numerodoc"> N° de documento del titular de la cuenta
+                    <input type="text" name="Numerodoc" id="Numerodoc" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="N°Cuenta"> N° de la cuenta a cancelar
+                    <input type="text" name="N°Cuenta" id="N°Cuenta" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="ContraseñaN">Contraseña
+                    <input type="password" name="ContraseñaN" id="ContraseñaN" required>
+                </label>
+                
+                <label for="ConfirmeContraseñaN">Confirme Contraseña
+                    <input type="password" name="ConfirmeContraseñaN" id="ConfirmeContraseñaN" required>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+               <button type="submit" id="CancelarCuenta">Desactivar Cuenta</button>
+            </div>
+
+
+        </fieldset>
+        
+    </form>
+    
+    <form action="#" autocomplete="off" id="Reactivar">
+        <fieldset>
+            <legend><h2>Reactivar una cuenta</h2></legend>
+
+            <div>
+                <label for="N°cuenta">N° de la cuenta que desea reactivar
+                <input type="texto" name="N°cuenta" id="N°cuenta">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="CorreoElectronico">Digite su correo electronico
+                    <input type="email" name="CorreoElectronico" id="CorreoElectronico" required>
+                </label>
+            </div>
+
+            <br>
+            
+            <button type="submit" id="Codigo">Enviar Info</button>
+
+            <br>
+            <br>
+
+            Se le enviara un mensaje a su correo electronico con un codigo de confirmacion
+            por favor digitelo en el campo requerido.
+
+             <label for="Codigo">
+                <input type="text" name="Codigo" id="Codio" placeholder="Codigo de confirmacion">
+            </label>
+ 
+        </fieldset>
+        
+    </form>
+
+    <form>
+        <fieldset>
+            <legend><h2>Depositar Dinero</h2></legend>
+        
+          <div>
+            <label for="n°decuenta">Numero de su cuenta</label>
+            <input type="text" name="n°decuenta" id="n°decuenta" required>
+          </div>
+
+          <br>
+
+          <div>
+            <label for="n°decuentaAdepositar">Numero de la cuenta a la que va a deositar</label>
+            <input type="text" name="n°decuentaAdepositar" id="n°decuentaAdepositar" required>
+          </div>
+
+          <br>
+
+          <div>
+            Seleccione el tipo de cuenta
+                <select>
+                    <option value="Choice">Elije una opcion</option>
+                    <option value="Ahorros">Ahorros</option>
+                    <option value="Corriente">Corriente</option>
+                </select>
+
+                <br>
+                <br>
+
+          </div>
+
+          <div>
+             <label for="Dep">
+             <input type="text" name="Dep" id="Dep" placeholder="Deposite cantidad deseada" required>
+             </label>
+          </div>
+
+          <br>
+
+          <div>
+            <button type="submit" id="Confirmar">Depositar</button>
+          </div>
+
+          <br>
+
+          <div>
+            <button type="submit" id="VisualizarDepositos">Consultar Depositos Realizados</button>
+            <label for="Deposite">
+                <input readonly name="Deposite" id="Deposite"> 
+            </label>
+         </div>
+
+        </fieldset>
+        
+    </form>
+
+    <form>
+        <form>
+            <fieldset>
+                <legend><h2>Retirar Dinero</h2></legend>
+            
+              <div>
+                <label for="NroDecuenta">Numero de la cuenta</label>
+                <input type="text" name="NroDecuenta" id="NroDecuenta">
+              </div>
+    
+              <br>
+    
+              <div>
+                Seleccione el tipo de cuenta
+                    <select>
+                        <option value="Choice">Elije una opcion</option>
+                        <option value="Ahorros">Ahorros</option>
+                        <option value="Corriente">Corriente</option>
+                    </select>
+    
+                    <br>
+                    <br>
+    
+              </div>
+    
+              <div>
+                 <label for="Retirar">Cantidad que desea retirar</label>
+                 <br>
+                 <br>
+                 <input type="radio" name="Retirar" id="Retirar">$0
+                 <input type="radio" name="Retirar" id="Retirar">$10.000
+                 <br>
+                 <input type="radio" name="Retirar" id="Retirar">$50.000
+                 <input type="radio" name="Retirar" id="Retirar">$100.000
+                 <br>
+                 <input type="radio" name="Retirar" id="Retirar">$200.000
+                 <input type="radio" name="Retirar" id="Retirar">$600.000
+
+                 <br>
+                 <br>
+                 
+                 <input type="radio" name="Retirar" id="Retirar">
+                 <label for="Otro">Otra
+                     <br>
+                 <input type="text" name="Otro" id="Otro" placeholder="Deposite cantidad deseada">
+                 </label>
+              </div>
+
+              <br>
+    
+              <div>
+                <label for="password">Contraseña 
+                        <input type="password" name="password" id="password" required>
+                </label>
+                    
+                <label for="Confirmepasword">Confirme Contraseña
+                        <input type="password" name="Confirmepasword" id="Confirmepasword" required>
+                </label>
+              </div>
+
+              <br>
+
+              <button type="submit" id="Retirar">Retirar</button>
+
+              <br>
+              <br>
+
+              <div>
+                <button type="submit" id="VisualizarRetiros">Consultar Retiros Realizados</button>   
+                <label for="Ret">
+                    <input readonly name="Ret" id="Ret">
+                </label>
+              </div>
+    
+            </fieldset>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend><h2>Consultar saldo</h2></legend>
+
+            
+            <div>
+                <label for="CuentaN°">Numero de Cuenta
+                <input type="text" name="CuentaN°" id="CuentaN°" required>
+                </label>
+           </div>
+
+           <br>
+
+           <div>
+               <label for="Pass">Contraseña
+                   <input type="password" name="Pass" id="Pass">
+               </label>
+               <label for="pass">Confirme contraseña
+                   <input type="password" name="pass" id="pass">
+               </label>
+           </div>
+           
+           <br>
+           
+
+           <button type="submit" id="consult">Consultar</button>
+
+            <label Salconsul>
+                <input type="text" placeholder="Saldo" readonly>
+            </label>
+
+           <br>
+           <br>
+
+           <div>
+            <button type="submit" id="saldosconsultados">Saldos Consultados</button>
+            <label for="consul">
+                <input readonly name="consul" id="consul">
+            </label>
+           </div>
+            
+            
+        </fieldset>
+    </form>
+
+    <br>
+
+        <button type="submit" id="Cerrar" >Cerrar sesion</button>
+
+    
+    <script src="Cuenta.js"></script>
+    <script src="Main.js"></script>
+
+</body>
+</html>
